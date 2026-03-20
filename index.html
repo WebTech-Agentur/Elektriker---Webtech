@@ -38,64 +38,46 @@
 
     <main>
         <section class="hero" id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <h1><span>Professionelle</span> Elektroinstallationen & Reparaturen</h1>
-                    <p>Ihr zuverlässiger Partner für schnelle und fachgerechte Hilfe bei allen Elektroarbeiten – für
-                        Privat- und Geschäftskunden.</p>
-                    <div class="hero-btns">
-                        <a href="leistungen.html" class="btn white-border-btn">Unsere Leistungen</a>
-                        <a href="kontakt.html" class="btn btn-secondary white-border-btn">Angebot anfordern</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <canvas id="particles"></canvas>
+            <div class="container hero-container">
+                <h1>Elektrotechnik neu gedacht</h1>
+                <p>Modern. Sicher. Intelligent.</p>
 
-        <section class="advantages" id="why-us">
-            <div class="container">
-                <div class="advantages-split">
-                    <div class="advantages-image">
-                        <img src="https://images.unsplash.com/photo-1560700105-ef025fd710af?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="VoltPro Elektro Expertise">
-                    </div>
-                    <div class="advantages-content">
-                        <h2 class="section-title">Warum VoltPro Elektro?</h2>
-                        <p class="section-subtitle">Wir setzen neue Maßstäbe in Sachen Zuverlässigkeit und technischer
-                            Exzellenz.</p>
-
-                        <div class="advantage-items">
-                            <div class="advantage-item">
-                                <div class="item-icon">⚡</div>
-                                <div class="item-text">
-                                    <h3>Schnelligkeit & Notdienst</h3>
-                                    <p>Bei Stromausfällen oder Defekten sind wir in kürzester Zeit vor Ort – 24/7
-                                        Notdienst.</p>
-                                </div>
-                            </div>
-                            <div class="advantage-item">
-                                <div class="item-icon">🛠️</div>
-                                <div class="item-text">
-                                    <h3>Zertifizierte Facharbeit</h3>
-                                    <p>Unsere Installationen entsprechen den höchsten VDE-Sicherheitsstandards.</p>
-                                </div>
-                            </div>
-                            <div class="advantage-item">
-                                <div class="item-icon">✅</div>
-                                <div class="item-text">
-                                    <h3>Nachhaltige Lösungen</h3>
-                                    <p>Wir planen vorausschauend und nutzen energieeffiziente Technologien für Ihre
-                                        Zukunft.</p>
-                                </div>
-                            </div>
-                            <div class="advantage-item">
-                                <div class="item-icon">🤝</div>
-                                <div class="item-text">
-                                    <h3>Persönliche Beratung</h3>
-                                    <p>Egal ob Privathaushalt oder Industrie – wir finden die maßgeschneiderte Lösung
-                                        für Sie.</p>
-                                </div>
-                            </div>
+                <div class="hero-grid">
+                    <div class="card-service" onclick="go('leistungen.html#installation')">
+                        <div class="card-content-3d">
+                            <span class="icon-large">💡</span>
+                            <h3>Installation</h3>
+                            <p>Neubau & Modernisierung</p>
                         </div>
+                        <div class="card-info-extra">Komplette Lösungen</div>
+                    </div>
+
+                    <div class="card-service" onclick="go('leistungen.html#reparatur')">
+                        <div class="card-content-3d">
+                            <span class="icon-large">🔧</span>
+                            <h3>Reparatur</h3>
+                            <p>24h Service</p>
+                        </div>
+                        <div class="card-info-extra">Schnelle Hilfe</div>
+                    </div>
+
+                    <div class="card-service" onclick="go('leistungen.html#smart')">
+                        <div class="card-content-3d">
+                            <span class="icon-large">🏠</span>
+                            <h3>Smart Home</h3>
+                            <p>Automatisierung</p>
+                        </div>
+                        <div class="card-info-extra">Intelligente Technik</div>
+                    </div>
+
+                    <div class="card-service" onclick="go('leistungen.html#sicherheit')">
+                        <div class="card-content-3d">
+                            <span class="icon-large">🔒</span>
+                            <h3>Sicherheit</h3>
+                            <p>Alarm & Kamera</p>
+                        </div>
+                        <div class="card-info-extra">Schutzsysteme</div>
                     </div>
                 </div>
             </div>
@@ -104,10 +86,12 @@
         <section class="cta-section">
             <div class="container">
                 <div class="cta-glass-card">
-                    <span class="cta-badge">24/7 Notdienst</span>
-                    <h2>Brauchen Sie sofortige Hilfe?</h2>
-                    <p>Unser Expertenteam ist rund um die Uhr bereit, um Ihre Elektroprobleme schnell und sicher zu lösen.</p>
-                    <a href="tel:+4915566284478" class="btn white-border-btn cta-phone-btn">⚡ +49 (0) 15566284478</a>
+                    <div class="cta-content-wrapper">
+                        <span class="cta-badge"><span class="pulse-dot"></span> 24/7 Notdienst</span>
+                        <h2>Brauchen Sie sofortige Hilfe?</h2>
+                        <p>Unser Expertenteam ist rund um die Uhr bereit, um Ihre Elektroprobleme schnell und sicher zu lösen.</p>
+                    </div>
+                    <a href="tel:+4915566284478" class="btn white-border-btn cta-phone-btn">⚡ +49 15566284478</a>
                 </div>
             </div>
         </section>
@@ -123,15 +107,17 @@
                 </div>
                 <div class="footer-section">
                     <h3>Kontakt</h3>
-                    <p>Telefon: <a href="tel:+4915566284478">+49 (0) 15566284478</a></p>
+                    <p>Telefon: <a href="tel:+4915566284478">+49 15566284478</a></p>
+                    <p>Adresse: Landkreis Starnberg 548.100187, 11.356016</p>
                     <p>E-Mail: info@elektriker-service.de</p>
                 </div>
                 <div class="footer-section">
                     <h3>Übersicht</h3>
-                    <ul>
+                    <ul class="nav-links-footer">
                         <li><a href="index.html">Startseite</a></li>
                         <li><a href="leistungen.html">Leistungen</a></li>
                         <li><a href="uber-uns.html">Über uns</a></li>
+                        <li><a href="referenzen.html">Referenzen</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
