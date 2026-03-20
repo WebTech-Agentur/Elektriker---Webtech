@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #0A2540; /* Navy Blue */
     --accent-color: #0b3d91; /* User's Dark Blue */
@@ -420,6 +424,7 @@ header {
     align-items: center;
     gap: 50px;
     margin-bottom: 80px;
+    scroll-margin-top: 100px; /* Offset for sticky header */
 }
 
 .service-item.reverse {
