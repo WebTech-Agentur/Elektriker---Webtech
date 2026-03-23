@@ -38,59 +38,116 @@
     </header>
 
     <main>
-        <section class="hero" id="home">
-            <canvas id="particles"></canvas>
-            <div class="container hero-container">
-                <h1>Elektrotechnik neu gedacht</h1>
-                <p>Modern. Sicher. Intelligent.</p>
-
-                <div class="hero-grid">
-                    <div class="card-service" onclick="go('leistungen.html#installation')">
-                        <div class="card-content-3d">
-                            <span class="icon-large">💡</span>
-                            <h3>Installation</h3>
-                            <p>Neubau & Modernisierung</p>
-                        </div>
-                        <div class="card-info-extra">Komplette Lösungen</div>
-                    </div>
-
-                    <div class="card-service" onclick="go('leistungen.html#reparatur')">
-                        <div class="card-content-3d">
-                            <span class="icon-large">🔧</span>
-                            <h3>Reparatur</h3>
-                            <p>24h Service</p>
-                        </div>
-                        <div class="card-info-extra">Schnelle Hilfe</div>
-                    </div>
-
-                    <div class="card-service" onclick="go('leistungen.html#smart')">
-                        <div class="card-content-3d">
-                            <span class="icon-large">🏠</span>
-                            <h3>Smart Home</h3>
-                            <p>Automatisierung</p>
-                        </div>
-                        <div class="card-info-extra">Intelligente Technik</div>
-                    </div>
-
-                    <div class="card-service" onclick="go('leistungen.html#sicherheit')">
-                        <div class="card-content-3d">
-                            <span class="icon-large">🔒</span>
-                            <h3>Sicherheit</h3>
-                            <p>Alarm & Kamera</p>
-                        </div>
-                        <div class="card-info-extra">Schutzsysteme</div>
+        <!-- Hero Section -->
+        <section class="hero-professional" id="home">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-content-pro">
+                <div class="hero-text-box">
+                    <span class="hero-subtitle">Ihr Experte am Netz</span>
+                    <h1>Zertifizierte Elektroinstallation & Reparatur</h1>
+                    <p>Schnell, sicher und fachgerecht. Wir sind Ihr zuverlässiger Meisterbetrieb für private und gewerbliche Elektroarbeiten.</p>
+                    <div class="hero-action-btns">
+                        <a href="leistungen.html" class="btn btn-primary">Unsere Leistungen</a>
+                        <a href="kontakt.html" class="btn btn-outline-white">Angebot anfordern</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Trust Bar -->
+        <div class="trust-bar">
+            <div class="container trust-bar-grid">
+                <div class="trust-item">
+                    <span class="trust-icon">⚡</span>
+                    <span class="trust-text">24/7 Notdienst</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">🏆</span>
+                    <span class="trust-text">Meisterbetrieb</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">⏱️</span>
+                    <span class="trust-text">Schnell vor Ort</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span class="trust-text">Faire Preise</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services-clean section-padding" id="services">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Unsere Kernkompetenzen</h2>
+                    <p>Maßgeschneiderte Lösungen für Ihre elektrischen Anlagen</p>
+                </div>
+                <div class="service-grid-clean">
+                    <a href="leistungen.html#installation" class="service-card-clean">
+                        <div class="icon-wrapper">💡</div>
+                        <h3>Elektroinstallationen</h3>
+                        <p>Fachgerechte Installationen für private und gewerbliche Objekte nach höchsten Sicherheitsstandards.</p>
+                        <span class="service-link">Mehr erfahren &rarr;</span>
+                    </a>
+                    <a href="leistungen.html#beleuchtung" class="service-card-clean">
+                        <div class="icon-wrapper">✨</div>
+                        <h3>Beleuchtungslösungen</h3>
+                        <p>Effiziente und stimmungsvolle Lichtkonzepte für Innen- und Außenbereiche, inklusive LED-Technik.</p>
+                        <span class="service-link">Mehr erfahren &rarr;</span>
+                    </a>
+                    <a href="leistungen.html#smart" class="service-card-clean">
+                        <div class="icon-wrapper">🏠</div>
+                        <h3>Smart Home Systeme</h3>
+                        <p>Intelligente Vernetzung Ihrer gesamten Haustechnik für maximalen Komfort und Effizienz.</p>
+                        <span class="service-link">Mehr erfahren &rarr;</span>
+                    </a>
+                    <a href="leistungen.html#sicherheit" class="service-card-clean">
+                        <div class="icon-wrapper">🔒</div>
+                        <h3>Sicherheitstechnik</h3>
+                        <p>Moderne Alarmanlagen, Videoüberwachung und smarte Zutrittskontrollen für Ihren Schutz.</p>
+                        <span class="service-link">Mehr erfahren &rarr;</span>
+                    </a>
+                    <a href="leistungen.html#neubau" class="service-card-clean">
+                        <div class="icon-wrapper">🏗️</div>
+                        <h3>Renovierung & Neubau</h3>
+                        <p>Komplette elektrotechnische Planung und Umsetzung für Neubauten und Altbausanierungen.</p>
+                        <span class="service-link">Mehr erfahren &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warum Wir Section -->
+        <section class="why-us-clean section-padding bg-light">
+            <div class="container">
+                <div class="why-us-split">
+                    <div class="why-us-image">
+                        <img src="images/why_us.png" alt="Elektriker bei der Arbeit">
+                    </div>
+                    <div class="why-us-content">
+                        <span class="accent-text">Über VoltPro Elektro</span>
+                        <h2>Qualität aus Meisterhand</h2>
+                        <p>Wir setzen neue Maßstäbe in Sachen Zuverlässigkeit und technischer Exzellenz. Unser Team besteht aus erfahrenen Fachkräften, die jedes Projekt mit größter Sorgfalt umsetzen.</p>
+                        <ul class="why-us-list">
+                            <li><strong>✓ Zertifizierte Facharbeit:</strong> Installationen nach aktuellen VDE-Standards.</li>
+                            <li><strong>✓ Persönliche Beratung:</strong> Wir finden die maßgeschneiderte Lösung für Sie.</li>
+                            <li><strong>✓ Nachhaltige Lösungen:</strong> Vorausschauende Planung, energieeffiziente Technik.</li>
+                        </ul>
+                        <a href="uber-uns.html" class="btn btn-secondary mt-20">Mehr über uns erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
                 <div class="cta-glass-card">
                     <div class="cta-content-wrapper">
                         <span class="cta-badge"><span class="pulse-dot"></span> 24/7 Notdienst</span>
                         <h2>Brauchen Sie sofortige Hilfe?</h2>
-                        <p>Unser Expertenteam ist rund um die Uhr bereit, um Ihre Elektroprobleme schnell und sicher zu lösen.</p>
+                        <p>Unser Expertenteam ist bereit, um Ihre Elektroprobleme schnell und sicher zu lösen.</p>
                     </div>
                     <a href="tel:+4915566284478" class="btn white-border-btn cta-phone-btn">⚡ +49 15566284478</a>
                 </div>
